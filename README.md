@@ -30,7 +30,7 @@ jsmediatags.read(file, {
 Since some stuff has been removed, bundle size is smaller now:
 
 * jsmediatags: 44.3kB MINIFIED / 11.6kB MINIFIED + GZIPPED => https://bundlephobia.com/result?p=jsmediatags
-* jsmediatags-web: 37.2kB MINIFIED / 10kB MINIFIED + GZIPPED => https://bundlephobia.com/result?p=jsmediatags-web
+* jsmediatags-web: 29kB MINIFIED / 9.6kB MINIFIED + GZIPPED => https://bundlephobia.com/result?p=jsmediatags-web
 
 
 ### Installation
