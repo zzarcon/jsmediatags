@@ -1,10 +1,12 @@
 {
   "name": "jsmediatags-web",
   "version": "0.0.1",
-  "main": "build2/jsmediatags.js",
+  "main": "dist/jsmediatags.js",
+  "jsnext:main": "dist/index.js",
+  "module": "dist/index.js",
   "description": "Media Tags Reader (ID3, MP4)",
   "scripts": {
-    "build": "rm -rf build2 && babel src --ignore __tests__,__mocks,FlowTypes.js --out-dir build2"
+    "build": "rm -rf dist && babel src --ignore __tests__,__mocks,FlowTypes.js --out-dir dist"
   },
   "contributors": [
     {
@@ -41,6 +43,6 @@
     "watchify": "~3.7.0"
   },
   "files": [
-    "build2"
+    "dist"
   ]
 }
