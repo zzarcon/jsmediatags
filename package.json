@@ -48,18 +48,12 @@
     "babelify": "~7.3.0",
     "browserify": "~14.4.0",
     "flow-bin": "~0.53.1",
-    "google-closure-compiler": "20170626.0.0",
     "jest-cli": "~23.6.0",
     "react": "^16.2.0",
     "watchify": "~3.7.0"
   },
   "scripts": {
-    "test": "jest",
-    "build": "rm -rf build2 && babel src --ignore __tests__,__mocks,FlowTypes.js --out-dir build2",
-    "watch": "babel --ignore __tests__,__mocks,FlowTypes.js --watch src --out-dir build2",
-    "dist-dev": "mkdir -p dist && browserify src/jsmediatags.js --detect-globals false -i ./src/NodeFileReader.js -i ./src/ReactNativeFileReader.js -o dist/jsmediatags.js -s jsmediatags -t babelify",
-    "dist-watch": "mkdir -p dist && watchify src/jsmediatags.js -v --detect-globals false -i ./src/NodeFileReader.js -i ./src/ReactNativeFileReader.js -o dist/jsmediatags.js -s jsmediatags -t babelify",
-    "dist": "npm run dist-dev && java -jar node_modules/google-closure-compiler/compiler.jar --warning_level QUIET --compilation_level SIMPLE_OPTIMIZATIONS --js dist/jsmediatags.js > dist/jsmediatags.min.js"
+    "build": "rm -rf build2 && babel src --ignore __tests__,__mocks,FlowTypes.js --out-dir build2"
   },
   "jest": {
     "rootDir": "./src",
