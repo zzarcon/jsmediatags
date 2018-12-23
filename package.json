@@ -1,7 +1,11 @@
 {
   "name": "jsmediatags-web",
   "version": "0.0.1",
+  "main": "build2/jsmediatags.js",
   "description": "Media Tags Reader (ID3, MP4)",
+  "scripts": {
+    "build": "rm -rf build2 && babel src --ignore __tests__,__mocks,FlowTypes.js --out-dir build2"
+  },
   "contributors": [
     {
       "name": "Jacob Seidelin"
@@ -12,25 +16,13 @@
     {
       "name": "Jesse Ditson",
       "email": "jesse.ditson@gmail.com"
+    },
+    {
+      "name": "@zzarcon"
     }
   ],
-  "main": "build2/jsmediatags.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aadsm/jsmediatags.git"
-  },
-  "keywords": [
-    "ID3",
-    "tags",
-    "mp3",
-    "audio",
-    "mp4"
-  ],
+  "repository": "https://github.com/zzarcon/jsmediatags-web",
   "license": "BSD-3-Clause",
-  "bugs": {
-    "url": "https://github.com/aadsm/jsmediatags/issues"
-  },
-  "homepage": "https://github.com/aadsm/jsmediatags#readme",
   "devDependencies": {
     "babel-cli": "~6.26.0",
     "babel-core": "~6.26.0",
@@ -47,16 +39,6 @@
     "jest-cli": "~23.6.0",
     "react": "^16.2.0",
     "watchify": "~3.7.0"
-  },
-  "scripts": {
-    "build": "rm -rf build2 && babel src --ignore __tests__,__mocks,FlowTypes.js --out-dir build2"
-  },
-  "jest": {
-    "rootDir": "./src",
-    "timers": "fake",
-    "transform": {
-      ".js$": "babel-jest"
-    }
   },
   "files": [
     "build2"
