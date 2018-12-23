@@ -1,6 +1,6 @@
 {
   "name": "jsmediatags-web",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "main": "dist/jsmediatags.js",
   "jsnext:main": "dist/index.js",
   "module": "dist/index.js",
